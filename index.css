@@ -77,6 +77,14 @@ main {
   text-align: center;
 }
 
+@media only screen and (min-width: 600px) and (max-width: 900px) {
+  main {
+    max-width: 70%;
+    box-shadow: 0 0 10px hsl(0deg, 6%, 24%), 0 0 20px hsl(0deg, 36%, 70%);
+    border-radius: 5px;
+    padding-bottom: 8%;
+  }
+}
 @media only screen and (min-width: 900px) {
   .logo, .title, .parag, .formular {
     text-align: left;
