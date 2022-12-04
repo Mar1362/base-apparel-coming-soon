@@ -10,7 +10,7 @@
   box-sizing: border-box;
 }
 
-.formular, .parag, .title, .logo {
+.formular, #error-messsage, .parag, .title, .logo {
   width: 85%;
   margin-inline: auto;
 }
@@ -74,6 +74,20 @@ main {
   font-weight: 400;
 }
 
+#error-messsage {
+  /*we used id in order to make the js code easy when we change the className*/
+  color: hsl(0deg, 93%, 68%);
+  padding-left: 8%;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .formular {
   margin-top: 8%;
   display: flex;
@@ -135,7 +149,7 @@ main {
   }
 }
 @media only screen and (min-width: 900px) {
-  .logo, .title, .parag, .formular {
+  .logo, .title, .parag, #error-messsage, .formular {
     text-align: left;
     width: 90%;
   }
