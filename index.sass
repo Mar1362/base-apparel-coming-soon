@@ -5,6 +5,7 @@ $color-soft-red: hsl(0, 93%, 68%)
 $color-dark-grayish-red: hsl(0, 6%, 24%)
 $gradient-linear-first: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
 $gradient-linear-second: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+$font-size: mar.$font-size
 $font-family-josefin-sans: "Josefin Sans", auto
 $font-weight-level1: 300
 $font-weight-level2: 400
@@ -15,7 +16,7 @@ $font-weight-level3: 600
 //     border: 1px solid black
 
 %default-positionning
-    width: 90%
+    width: 85%
     margin-inline: auto
 
 
@@ -23,16 +24,48 @@ body
     min-width: 100vw
 
 main
-    padding-top: 8%
+    padding-top: 5%
     width: 100%
     margin-inline: auto
 
 .logo
     @extend %default-positionning
-    margin-bottom: 10%
+    margin-bottom: 5%
 
 .hero-img
     width: 100%
 
 .hero-img *
     width: 100%
+
+.title
+    @extend %default-positionning
+    text-align: center
+    font-size: calc( $font-size * 2.5 )
+    font-family: $font-family-josefin-sans
+    font-weight: $font-weight-level3
+    letter-spacing: 1rem
+    text-transform: uppercase
+    color: $color-dark-grayish-red
+    margin-top: 8%
+
+.title span
+    color: $color-desaturated-red
+    font-weight: $font-weight-level1
+    
+
+.title strong
+    font-weight: $font-weight-level3
+
+.parag
+    @extend %default-positionning
+    margin-top: 5%
+    color: $color-desaturated-red
+    text-align: center
+    font-family: $font-family-josefin-sans
+    font-weight: $font-weight-level2
+
+.formular
+    @extend %default-positionning
+    margin-top: 8%
+    text-align: center

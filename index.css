@@ -10,8 +10,8 @@
   box-sizing: border-box;
 }
 
-.logo {
-  width: 90%;
+.formular, .parag, .title, .logo {
+  width: 85%;
   margin-inline: auto;
 }
 
@@ -20,13 +20,13 @@ body {
 }
 
 main {
-  padding-top: 8%;
+  padding-top: 5%;
   width: 100%;
   margin-inline: auto;
 }
 
 .logo {
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
 
 .hero-img {
@@ -35,4 +35,37 @@ main {
 
 .hero-img * {
   width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Josefin Sans", auto;
+  font-weight: 600;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  color: hsl(0deg, 6%, 24%);
+  margin-top: 8%;
+}
+
+.title span {
+  color: hsl(0deg, 36%, 70%);
+  font-weight: 300;
+}
+
+.title strong {
+  font-weight: 600;
+}
+
+.parag {
+  margin-top: 5%;
+  color: hsl(0deg, 36%, 70%);
+  text-align: center;
+  font-family: "Josefin Sans", auto;
+  font-weight: 400;
+}
+
+.formular {
+  margin-top: 8%;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
