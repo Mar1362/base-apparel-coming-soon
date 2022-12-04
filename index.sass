@@ -1,13 +1,38 @@
-@use "mar"
+@use "mar" with ($font-size: 16px)
 
 $color-desaturated-red: hsl(0, 36%, 70%)
 $color-soft-red: hsl(0, 93%, 68%)
 $color-dark-grayish-red: hsl(0, 6%, 24%)
 $gradient-linear-first: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
 $gradient-linear-second: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
-$font-size: 16px
 $font-family-josefin-sans: "Josefin Sans", auto
 $font-weight-level1: 300
 $font-weight-level2: 400
 $font-weight-level3: 600
 
+
+// *
+//     border: 1px solid black
+
+%default-positionning
+    width: 90%
+    margin-inline: auto
+
+
+body
+    min-width: 100vw
+
+main
+    padding-top: 8%
+    width: 100%
+    margin-inline: auto
+
+.logo
+    @extend %default-positionning
+    margin-bottom: 10%
+
+.hero-img
+    width: 100%
+
+.hero-img *
+    width: 100%
