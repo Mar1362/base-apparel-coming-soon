@@ -34,7 +34,7 @@ main
     width: 100%
     margin-inline: auto
     margin-top: 5%
-    margin-bottom: 5%
+    margin-bottom: 4%
 
 .logo
     @extend %default-positionning
@@ -85,8 +85,13 @@ main
         height: 35px
         @include mar.roundedCorner( $color: $color-desaturated-red )
 
+        &:focus
+            border-color: $color-desaturated-red
+            outline: none
+
         &::placeholder
             color: $color-desaturated-red
+
 
     input[type='submit']
         @include mar.roundedCorner($border-size: 0)
@@ -96,6 +101,13 @@ main
         height: 35px
         right: 35px
         background: url("images/icon-arrow.svg") no-repeat 50% 50%, linear-gradient( to bottom right, white, $color-soft-red)
+        z-index: 20
+       
+        &:hover
+                box-shadow: 0px 8px 10px $color-desaturated-red
+                transform: scale(1.05)
+                background: url("images/icon-arrow.svg") no-repeat 50% 50%, hsl(0, 80%, 86%)
+                cursor: pointer
 
 
 @media only screen and (min-width: 600px) and (max-width: 900px)
@@ -159,5 +171,8 @@ main
 
         input[type='submit']
             position: relative
-            width: 50px
+            width: 35px
+            height: 35px
             right: 30px
+
+            
