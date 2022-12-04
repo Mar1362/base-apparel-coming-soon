@@ -35,6 +35,7 @@ main
     margin-inline: auto
     margin-top: 5%
     margin-bottom: 4%
+    background: linear-gradient( 135deg,hsl(0, 0%, 100%),hsl(0, 100%, 98%)) no-repeat
 
 .logo
     @extend %default-positionning
@@ -96,7 +97,7 @@ main
         width: 65%
         height: 35px
         font-family: $font-family-josefin-sans
-        @include mar.roundedCorner( $color: $color-desaturated-red )
+        @include mar.roundedCorner( $color: $color-desaturated-red)
 
         &:invalid
             border: 2px solid $color-soft-red
