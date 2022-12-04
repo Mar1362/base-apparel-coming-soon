@@ -78,6 +78,23 @@ main
     @extend %default-positionning
     margin-top: 8%
     text-align: center
+    display: flex
+    justify-content: center
+    
+    input[type='email']
+        width: 90%
+        height: 40px
+        @include mar.roundedCorner( $color: $color-desaturated-red )
+
+    input[type='submit']
+        @include mar.roundedCorner($color: rgba(1,1,1,0))
+        box-sizing: content-box
+        position: relative
+        right: 50px
+        width: 50px
+        top: 1.5px
+        height: 36px
+        background: url("images/icon-arrow.svg") no-repeat 50% 50%, linear-gradient( to right, $color-desaturated-red, $color-soft-red),
 
 
 @media only screen and (min-width: 600px) and (max-width: 900px)

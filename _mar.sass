@@ -10,3 +10,10 @@ $font-size: 14px !default
     margin: 0
     padding: 0
     box-sizing: border-box
+
+
+@mixin roundedCorner($border-style: solid, $border-size: 1px, $color: lightgray)
+    border-style: $border-style
+    padding-inline: 4%
+    border: $border-size solid $color
+    border-radius: 50px
