@@ -26,6 +26,7 @@ body {
 
 main {
   padding-top: 5%;
+  padding-bottom: 5%;
   width: 100%;
   margin-inline: auto;
   margin-top: 5%;
@@ -46,7 +47,7 @@ main {
 
 .title {
   text-align: center;
-  font-size: 40px;
+  font-size: 32px;
   font-family: "Josefin Sans", auto;
   font-weight: 600;
   letter-spacing: 1rem;
@@ -68,6 +69,7 @@ main {
   margin-top: 5%;
   color: hsl(0deg, 36%, 70%);
   text-align: center;
+  font-size: calc(16px - 0.2rem);
   font-family: "Josefin Sans", auto;
   font-weight: 400;
 }
