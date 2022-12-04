@@ -83,7 +83,13 @@ main
     input[type='email']
         width: 65%
         height: 35px
+        font-family: $font-family-josefin-sans
         @include mar.roundedCorner( $color: $color-desaturated-red )
+
+        &:invalid
+            border: 2px solid $color-soft-red
+            background: url(images/icon-error.svg) no-repeat 20px/20px
+            background-position: 85% 50%
 
         &:focus
             border-color: $color-desaturated-red
